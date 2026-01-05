@@ -72,4 +72,9 @@
         "format": "{}",
         "on-click": "playerctl play-pause"
     }
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 10
+      }
 }
