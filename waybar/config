@@ -4,25 +4,43 @@
     "height": 28,
     "spacing": 5,
 
-    "modules-left": ["hyprland/workspaces"],
+    "modules-left": ["custom/ws1", "custom/ws2", "custom/ws3", "custom/ws4", "custom/ws5"],
     "modules-center": ["clock"],
     "modules-right": ["custom/mediaplayer", "wireplumber", "idle_inhibitor", "network", "tray"],
 
-    "hyprland/workspaces": {
-        "format": "<span size='larger'>{icon}</span>",
-        "format-icons": {
-            "active": "\uf444",
-            "default": "\uf4c3"
-        },
-        "icon-size": 10,
-        "sort-by-number": true,
-        "persistent-workspaces": {
-            "1": [],
-            "2": [],
-            "3": [],
-            "4": [],
-            "5": []
-        }
+    "custom/ws1": {
+        "exec": "~/.config/waybar/workspace.sh 1",
+        "return-type": "json",
+        "on-click": "hyprctl dispatch 'hl.dsp.focus({workspace = 1})'",
+        "tooltip": false
+    },
+
+    "custom/ws2": {
+        "exec": "~/.config/waybar/workspace.sh 2",
+        "return-type": "json",
+        "on-click": "hyprctl dispatch 'hl.dsp.focus({workspace = 2})'",
+        "tooltip": false
+    },
+
+    "custom/ws3": {
+        "exec": "~/.config/waybar/workspace.sh 3",
+        "return-type": "json",
+        "on-click": "hyprctl dispatch 'hl.dsp.focus({workspace = 3})'",
+        "tooltip": false
+    },
+
+    "custom/ws4": {
+        "exec": "~/.config/waybar/workspace.sh 4",
+        "return-type": "json",
+        "on-click": "hyprctl dispatch 'hl.dsp.focus({workspace = 4})'",
+        "tooltip": false
+    },
+
+    "custom/ws5": {
+        "exec": "~/.config/waybar/workspace.sh 5",
+        "return-type": "json",
+        "on-click": "hyprctl dispatch 'hl.dsp.focus({workspace = 5})'",
+        "tooltip": false
     },
 
     "clock": {

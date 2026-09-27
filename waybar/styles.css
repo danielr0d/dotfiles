@@ -14,33 +14,30 @@
     background-color: @background;
 }
 
-#workspaces button {
+#custom-ws1,
+#custom-ws2,
+#custom-ws3,
+#custom-ws4,
+#custom-ws5 {
     color: @foreground;
     padding-left: 0.7em;
-    background-color: transparent;
-    border: none;
 }
 
-#workspaces button:hover {
-    background: transparent;
-    box-shadow: none;
-    border: none;    
+#custom-ws1:hover,
+#custom-ws2:hover,
+#custom-ws3:hover,
+#custom-ws4:hover,
+#custom-ws5:hover {
     color: #ffffff;
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
     transition: all 0.2s ease;
 }
 
-#workspaces button:active {
-    color: @foreground;
-    background: transparent;
-    box-shadow: none;
-}
-
-#workspaces button.active {
-    color: @foreground;
-}
-
-#workspaces button.empty {
+#custom-ws1.empty,
+#custom-ws2.empty,
+#custom-ws3.empty,
+#custom-ws4.empty,
+#custom-ws5.empty {
     color: @foreground-inactive;
 }
 
