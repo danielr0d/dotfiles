@@ -21,6 +21,7 @@
 #custom-ws5 {
     color: @foreground;
     padding-left: 0.7em;
+    padding-right: 0.3em;
 }
 
 #custom-ws1:hover,
